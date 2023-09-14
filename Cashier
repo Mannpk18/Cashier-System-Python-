@@ -1,0 +1,93 @@
+def DisplayItems():
+    "McMaster food centre"
+    print("Today's menu includes-",'\n')
+    print("1.)Cheese Pizza- 1 Slice [$5+Tax]")
+    print("2.)Pepperoni Pizza- 1 Slice [$5+Tax]")
+    print("3.)Chicken Sandwich [$6.50+Tax]")
+    print("4.)Fries [$4+Tax]")
+    print("5.)Mix Quesdilla [$10+Tax]")
+    print("6.)Mac n Cheese [$6+Tax]")
+    print("7.)Soda [$4.50+Tax]")
+    print("8.)Water Bottle [$3+Tax]")
+    
+
+def AddItems():
+    
+    l1=[]
+    l2=[]
+    x=int(input("Enter the number of Items-"))
+    for i in range(0,x):
+        
+        y=input("Enter the Item-")
+        if y=="Cheese Pizza" or y=="cheese pizza" or y=="1":
+            l1.append(5)
+            l2.append(1.5)
+            
+            
+
+        elif y=="Pepperoni Pizza" or y=="pepperoni pizza" or y=="2":
+            l1.append(5)
+            l2.append(1.5)
+            
+
+        elif y=="Chicken Sandwich" or y=="chicken sandwich" or y=="3":
+            l1.append(6.50)
+            l2.append(2)
+            
+
+        elif y=="Fries" or y=="fries" or y=="4":
+            l1.append(4)
+            l2.append(1.2)
+            
+
+        elif y=="Mix Quesdilla" or y=="mix quesdilla" or y=="5":
+            l1.append(10)
+            l2.append(2.2)
+            
+
+        elif y=="Mac n Cheese" or y=="mac n cheese" or y=="6":
+            l1.append(6)
+            l2.append(1.5)
+            
+
+        elif y=="Soda" or y=="soda" or y=="7":
+            l1.append(4.50)
+            l2.append(1.3)
+            
+
+        elif y=="Water Bottle" or y=="water bottle" or y=="8":
+            l1.append(3)
+            l2.append(1.1)
+            
+
+        else:
+            print("Item not available")
+
+    print("The Subtotal is- $",sum(l1))
+    print("Tax on these items- $",sum(l2))
+    print("The Total cost along with Tax- $",sum(l1)+sum(l2))
+
+
+
+print("Welcome to McMaster Cafe!", '\n')
+print("1.) To view the menu, press 1")
+print("2.) To place an order, press 2", '\n')
+c="yes"
+while c=="yes":
+    a=int(input("Enter 1 or 2 to view menu or order respectively-"))
+    if a==1:
+        DisplayItems()
+    else:
+        AddItems()
+
+    c=input("Enter yes to continue to another operation-")
+        
+
+
+
+
+    
+
+
+
+
